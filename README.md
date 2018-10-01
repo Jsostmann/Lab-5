@@ -1,23 +1,22 @@
-# Lab-6
-## Simple Inheritance
+# Simple Inheritance
 
-This is the sixth lab for COMP 167 Computer Program Design at North Carolinga A&T State University.
+### This is a lab for COMP 167 Computer Program Design at North Carolinga A&T State University.
 
-Instructor: Dr. Kelvin Bryant - ksbryant@ncat.edu
+### Instructor: Dr. Kelvin Bryant - ksbryant@ncat.edu
 
-### Lab Description
+## Lab Description
 In this lab, you will be creating several classes that will be related by inheritance. You will also create a simple client class to output the contents of the created objects.
 
-#### Dwelling Class 
+### Dwelling Class 
 This class has the following properties: streetAddress:String, city:String, state:String, zip:String, bedrooms:int, bathrooms:double. In addition to the standard getter/setter methods, the class also has a no-arg constructor that sets all properties to their Java default values. Override the toString() method such that it prints all the properties separated by the ‘|’ character.
 
-#### House Class
+### House Class
 This class inherits from the Dwelling class but also includes the properties: acreage:double and garageSize: int (0 means no garage, 1 means one car garage, etc.). Include a no-arg constructor and override the toString() method in a similar fashion as you did for the Dwelling class. Your toString method must use the `super` keyword.
 
-#### Apartment Class
+### Apartment Class
 This class also inherits from the Dwelling class but also include the properties: apptNum:String, laundry:boolean (indicates if the appartment has washer and dryer connections). Include a no-arg constructor and override the toString() method in a similar fashion as you did for the Dwelling class. Your toString method must use the `super` keyword.
 
-#### Input File Format
+### Input File Format
 
 
 Assume the following format for the program input file:
@@ -36,7 +35,7 @@ Zip
 
 Other properties depending on the Dwelling Type
 
-##### Example File
+#### Example File
 ```
 H
 1601 East Maple Lane
@@ -56,5 +55,5 @@ NC
 1 /* 0 means no and 1 means yes */
 ```
 
-#### Driver/Test Class
+### Driver/Test Class
 You will need to create a main method that passes in the name of the input file using command line arguments. The input file should be opened and your program should read in all the Dwelling information into an ArrayList<Dwelling>. Also write a method in the same file that outputs the properties of each dweiling in a JOptionPane.
