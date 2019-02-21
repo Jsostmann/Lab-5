@@ -13,10 +13,10 @@ public class Main {
     
     public static void main(String[] args) {
         
-        System.out.println("Hello World");
+       
         DwellingHandler handler = new DwellingHandler();
         
-        handler.readDwellings(args[0]);
+        handler.readDwellings("dwelling.txt");
         handler.printDwellings();
         
         
